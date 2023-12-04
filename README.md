@@ -15,4 +15,3 @@ Welcome to the Nurse Review Portal! This web application is designed for nurses 
 - **MySQL:** Used for database management.
 - **JavaScript & CSS:** Ensures a dynamic and responsive user interface.
 - **CRUD Architecture:** Facilitates efficient data handling and interactions.
-# NurseBulletin
