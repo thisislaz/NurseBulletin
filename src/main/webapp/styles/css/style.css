@@ -1,0 +1,1569 @@
+@charset "ISO-8859-1";
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    resize: none; /* Disables resizing */
+}
+
+
+.nav-bar {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: burlywood;
+    padding: 16px;
+    color: white;
+}
+
+.sticky-nav.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky-nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Fix the navbar at the top of the screen */
+  z-index: 1000;
+}
+
+.nav-list {
+	display: flex;
+	list-style-type: none;
+	gap: 15px;
+	margin-left: -65%;
+}
+
+.nav-list > li > a {
+	color: white;
+	text-decoration: none;
+	font-size: small;
+	padding-bottom: 7px ;
+	border-bottom: 2px solid transparent; /* Add transparent bottom border initially */
+	transition: border-bottom-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.nav-list > li > a:hover {
+	color: lightgray; /* Change text color on hover */
+	border-bottom-color: lightgray; /* Add bottom border color on hover */
+}
+
+.bottom-line {
+	padding-bottom: 7px ;
+	border-bottom: 2px solid transparent; /* Add transparent bottom border initially */
+	transition: border-bottom-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.bottom-line:hover {
+	cursor: pointer;
+	color: black; /* Change text color on hover */
+	border-bottom-color: lightgray; /* Add bottom border color on hover */
+}
+
+.nav-bar-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.custom-btn {
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  
+}
+
+.custom-btn-sq {
+	background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 23px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.custom-btn-sq-blue {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 9px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.left-btn {
+	background-color: inherit;
+}
+
+.left-btn:hover {
+	background-color: inherit;
+}
+
+.custom-btn:hover {
+  background-color: white;
+  color: green;
+}
+
+.custom-btn-sq:hover {
+	opacity: .5;
+}
+ 
+ .container {
+  width: 100%vw;
+  height: 100%vh;
+ }
+ 
+ body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+ background-image: url("/assets/nurse_khan.jpg");
+  /* Control the height of the image */
+  min-height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-img .container a {
+	z-index: 999;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 1;
+  margin: 20px;
+  margin-top: 8%;
+  max-width: 437px;
+   padding: 42px;
+  background-color: white;
+  font-size: x-large;
+  border-radius: 12px;
+}
+
+.container p{
+	font-size: large;
+}
+
+.right-container {
+	position: absolute;
+  right: 0;
+  margin: 20px;
+  margin-right: 12%;
+  margin-top: 28%;
+  max-width: 437px;
+  padding: 16px;
+  color: white;
+  font-size: larger;
+  border-radius: 12px;
+}
+ 
+ #fill-btn {
+ display: block;
+	width: 100%;
+	text-align: center;
+}
+ 
+ .top-half {
+ 	text-align: center;
+ 	padding: 60px;
+ 	margin: 20px;
+ 	font-size: larger;
+ 	
+ 	
+ }
+ 
+ .middle-section {
+ 	min-height: 99%;
+ 	padding: 20px;
+ }
+ 
+ .bottom-half {
+ 	display: flex;
+ 	gap: 33px;
+ }
+ 
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px;
+}
+
+.bottom-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;  /* Adjust this padding as per your requirement */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 45%;
+    height: 50%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 25px;
+}
+ 
+ .card-container {
+ 	margin: 15px;
+ }
+ 
+ .bottom-section {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 min-height: 82%;
+	 padding: 20px;
+	 background-color: green;
+	 margin-top: 25px;
+	 position: relative;
+	 background-image: url("/assets/nurse_group.jpg");
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 position: relative;
+	 z-index: -1;
+ }
+ 
+ .lg-font {
+ 	font-size: 36px;
+ }
+ 
+ .bottom-section > div > .card {
+ 	background-color: white;
+ }
+ 
+ .bottom-section > h2 {
+ 	color: black;
+ 	text-align: center;
+ 	margin-top: 60px;
+ 	font-size: 38px;
+ }
+ 
+ .bottom-section > div > .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.mySlides {
+	display:none;
+}
+ 
+ .slideshow-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+ 
+ .active {
+  background-color: #717171;
+}
+ 
+ .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+ @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.footer-section {
+	display: flex;
+	flex: 1;
+	padding: 10px;
+	background-image: linear-gradient(to bottom right, white, burlywood);
+	justify-content: space-between; 
+	align-items: center;
+	min-height: 10%;
+}
+
+.footer-section > div > ul{
+	  list-style: none;
+	
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-tiktok{
+	background: black;
+	color: white;
+}
+
+.left-footer > h1{
+	margin-bottom: 6px;
+	color: black;
+}
+
+.right-footer{
+	display: flex;
+	justify-content: end;
+	padding-right: 11px;
+}
+
+.footer-section .nav-list{
+	align-items: center;
+}
+
+#black-font > li > a{
+	color: black;
+}
+
+#black-font > li > a:hover {
+	color: white; /* Change text color on hover */
+	border-bottom-color: white; /* Add bottom border color on hover */
+}
+
+#bg-color-login {
+	background-color: inherit;
+}
+
+.mid-container{
+	border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  width: 60%;
+}
+
+.mid-container input[type=submit] {
+	 background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.mid-container input[type=text], input[type=password] {
+	width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.mid-container label {
+	padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.login-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-row {
+	margin: 10px;	
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.login-row input[type=submit]:hover {
+	opacity: 0.7;
+}
+
+.col-100 {
+	display: flex;
+	align-items: center;
+	justify-content:center;
+  width: 100%;
+  margin-top: 6px;
+  gap: 18px;
+}
+
+.col-100 a {
+	color: green;
+}
+
+.col-100 a:hover {
+	opacity: 0.7;
+}
+
+.login-errors {
+	color: red;
+	padding-left: 4px;
+	margin-top: 3px;
+}
+
+.main-container {
+	padding: 25px 20%;
+	margin-top: 15px;
+}
+
+.col-left {
+	flex: 1;
+	padding: 3px;
+}
+.col-left h3 {
+	margin-bottom: 9px;
+}
+
+.col-right {
+	flex: 1;
+	padding: 3px;
+}
+
+.col-right h3{
+	margin: 9px 0px;
+}
+
+.row {
+	display: flex;
+	gap: 32px;
+}
+
+
+.reviews-col {
+	border: 1px solid lightgrey;
+	border-radius: 7px;
+	padding: 15px;
+	box-shadow: -1px 2px 2px 2px lightgrey;
+	margin-bottom: 13px;
+}
+
+.mid-container .login-row {
+	margin-top: 10px;
+}
+
+.clear-btn {
+	border: 2px solid black;
+    border-radius: 5px;
+    background-color: inherit;
+    color: black;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.danger {
+  border-color: green;
+  color: white;
+}
+
+.danger:hover {
+  background: green;
+  color: white;
+}
+
+.dropdown-btn {
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	margin-right:20px;
+	display: inline-block;
+}
+
+.dropdown i {
+	padding-right: 3px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   margin-top: 8px;
+   width:108%;
+}
+
+.fa-solid.fa-angle-down {cursor:pointer}
+
+.dropdown-content a {
+	color: black;
+	padding: 16px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown-btn {background-color: inherit;}
+
+.mid-container div label[for="content"], label[for="rating"] {
+	display: block;
+}
+
+.mid-container div textarea, select {
+	width: 100%;
+	padding: 2%;
+}
+
+.mid-container div {
+	margin-bottom: 1%;
+}
+
+.footer-section div ul a{
+	font-size: 16px;
+}
+
+.center-form .mid-container .card {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#autocomplete-results {
+	list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#autocomplete-results li a {
+	border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#autocomplete-results li a:hover:not(.header){
+	background-color: #eee;
+}
+
+#search {
+	background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#autocomplete-results {
+    max-height: 380px; 
+    overflow-y: auto; 
+    width: 100%;
+}
+
+#search-bar {
+	width: 520px;
+	height: 600px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  min-height: 100%;
+}
+
+.main-container {
+  flex: 1 0 auto; /* Allow the main content to grow and push the footer down */
+}
+
+footer {
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.custom-list {
+    list-style-type: none; /* Removes the default bullet points */
+}
+
+.custom-list a:hover{
+	color: blue;
+}
+
+.black-font {
+	color: blue;
+}
+
+.custom-list .black-font:hover {
+	color: burlywood;
+}
+
+.custom-list li {
+    margin: 0.2em; /* Optional: adds some vertical spacing between items */
+}
+
+.specific-edit .mid-container {
+	background-color: transparent;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid layout */
+  gap: 16px; /* Spacing between grid items */
+  padding: 16px;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;  /* ensures the container takes up the full width of its parent */
+}
+
+.review-card > * {
+	margin-bottom: 10px;
+}
+
+.review-card > *:last-child {
+	margin-bottom: 0 ;
+}
+
+.specific-edit .mid-container {
+	all: unset;
+}
+
+.center-form.specific-edit {
+	padding-top: 15px;
+}
+
+.main-container {
+    padding-top: 70px; /* assuming the navbar height is 60px */
+}
+
+.centered-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.centered-text h1 {
+	text-align: center;
+}
+
+.center-form {
+	padding: 150px 200px;
+}
+
+.center-form > .centered-text {
+	padding-top: 0px;
+}
+
+.center-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.justify-content-center {
+	height: 100vh;
+	justify-content: center;
+}
+
+.center-form .card {
+	width: auto;
+}
+
+.center-form .card-content {
+	display: flex;
+	gap: 10px;
+}
+
+.center-form .main-container {
+	margin: 0;
+}
+
+.center-form > .card p {
+	width: 220px;
+}
+
+/* Style to make pairs of <p> tags display side-by-side */
+.pair-container {
+    display: flex;
+    gap: 10px;
+}
+
+.new-card {
+	--card-min-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 25px;
+  width: fit-content; 
+  max-width: calc(100% + 20px); /* 100% refers to the width of the hospitalName in h3 and the additional 20px adds a little more space. Adjust this value if you want more or less space. */
+  margin: 0 auto;
+}
+
+/* Adjust width of <p> tags so that they don't take full width when placed side by side */
+.new-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Newer version of word-wrap */
+    max-width: var(--card-min-width);  /* To ensure there's some padding on either side */
+}
+
+/* Make the h3 inside new-card block and limit its width, while making the text centered */
+.new-card h3.centered-text {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new-card .pair-container {
+	margin-bottom: 5px;
+	font-size: larger;
+}
+
+/* Since h3 has default margins, to ensure the card's width matches the h3, let's remove the default margins */
+.new-card h3.centered-text {
+    margin: 0;
+    padding-bottom: 1rem;  /* For spacing, adjust as needed */
+}
+
+
+
+.bot-margin {
+  margin: 10px 0px;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.top-btns {
+	display: flex;
+	gap: 10px;
+}
+
+.bot-margin:hover {
+	background-color: white;
+  color: green;
+}
+
+.mid-container div textarea {
+	margin-bottom: 8px;
+}
+
+.mid-container span {
+	margin-left: 8px;
+}
+
+.margin-bot p:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+.search-reviews-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+#search-review-submit:hover {
+	opacity: 0.5;
+}
+
+.search-reviews-form form > * {
+    margin-bottom: 10px;  /* Adjust value as needed */
+    height: 44px;
+}
+
+.hospitalname-city {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.new-card .hospitalname-city {
+	gap: 55px;
+	margin-bottom: 15px;
+}
+
+.hospital-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hospital-table, .hospital-table th, .hospital-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.hospital-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.hospital-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.hospital-table .custom-btn-sq {
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: auto;  /* let the button size adjust automatically based on content */
+    transition: background-color 0.3s;
+}
+
+.hospital-table .custom-btn-sq:hover {
+    background-color: #45a049;
+}
+
+/* To center content in the table cells */
+.hospital-table td {
+    vertical-align: middle; 
+    text-align: center;  /* center content horizontally */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Adjust width if needed */
+    margin: 0 auto 80px auto;
+    overflow: visible;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1px 19px;
+    z-index: 1000; 
+}
+
+.carousel-btn:hover {
+	cursor: pointer;
+    /* Using rgba for light grey color with slight transparency */
+    background-color: rgba(211, 211, 211, 0.7); /* lightgrey equivalent with 70% opacity */
+}
+
+.prev-btn {
+    left: -75px;
+}
+
+.next-btn {
+    right: -75px;
+}
+
+.center-container .custom-btn-sq {
+	margin-right: 15px;	
+}
+
+.center-form > .centered-text.main-container h2 {
+	margin-top: 30px;
+}
+
+.centered-text.main-container .custom-btn-sq {
+	margin-right: 15px;
+}
+
+.carousel-item.active-slide {
+    display: flex; /* Show only active slide */
+}
+.slide-number-display {
+    position: absolute;
+    bottom: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.center-form .centered-text.main-container .custom-btn-sq {
+	margin-top: 40px;
+}
+
+.card.mySlides.fade {
+	padding-bottom: 30px;
+}
+
+.arrow-link {
+	color: green;
+    text-decoration: none;  /* Removes underline */
+}
+
+.arrow-link:hover {
+	color: #007BFF;
+    text-decoration: underline; /* Underlines the link on hover for added emphasis */
+}
+
+.nav-bar.sticky-nav h2 a {
+	color: white;
+	text-decoration: none;
+	padding-bottom: 7px ;
+	border-bottom: 2px solid transparent; /* Add transparent bottom border initially */
+	transition: border-bottom-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.nav-bar.sticky-nav h2 a:hover {
+	color: rgba(0, 128, 0, 0.7);
+	border-bottom-color: rgba(0, 128, 0, 0.9);
+}
+
+.d-flex {
+	display: flex;
+	gap: 5px;
+}
+
+.discussions-bottom {
+	display: flex;
+	padding: 55px;
+	gap: 60px;
+}
+
+.discussions-left {
+	flex: 3;
+}
+
+.discussions-right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.discussions-right h1 {
+	border-bottom: solid 2px black;
+}
+
+.discussions-right .mid-container {
+	background-color: white;
+	width: 80%;
+}
+
+.right-aligned-legend {
+	margin-right: 20px;
+	padding: 0px 10px;
+}
+
+.discussion-card {
+	margin-bottom: 20px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+.fieldset-left-col {
+	flex: 1;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.fieldset-middle-col {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.fieldset-middle-col p {
+	margin-top: 10px;
+}
+
+.fieldset-middle-col a {
+	font-size: larger;
+	text-decoration: none;
+	color: black;
+}
+
+.fieldset-middle-col a:hover {
+	color: blue;
+}
+
+.fieldset-right-col {
+	flex: 1.25;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.fieldset-right-col a {
+	text-decoration: none;
+	color: black;
+}
+
+.fieldset-right-col a:hover {
+	color: blue;
+}
+
+.fieldset-right-col-list {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	padding-right: 10px;
+}
+
+.fieldset-right-col-list ul{
+	list-style-type: none;
+}
+
+#confirmDiv {
+	display: none;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal-content span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.profile-image {
+    width: 50px;           /* Set the width of the profile picture */
+    height: 50px;          /* Ensure height is same as width to get a perfect circle */
+    border-radius: 50%;    /* Make it circular */
+    object-fit: cover;     /* If it's an image, this ensures it scales correctly */
+    display: inline-block; /* To ensure border applies correctly */
+    overflow: hidden;      /* To ensure the child content doesn't spill out */
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: a default background color */
+    margin-right: -13px;
+    position: relative;
+    margin-top: -15px;
+    border: 2px solid white;
+}
+
+.fieldset-left-col .profile-image {
+	margin-right: 0;
+}
+
+.more-indicator {
+	font-size: 22px;
+    width: 50px;           /* Set the width of the profile picture */
+    height: 50px;          /* Ensure height is same as width to get a perfect circle */
+    border-radius: 50%;    /* Make it circular */
+    object-fit: cover;     /* If it's an image, this ensures it scales correctly */
+    display: inline-block; /* To ensure border applies correctly */
+    overflow: hidden;      /* To ensure the child content doesn't spill out */
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: a default background color */
+    margin-right: -12px;
+    position: relative;
+    margin-top: -15px;
+    border: 2px solid white;
+    padding-bottom: 10px;
+}
+
+#chooseBtn {
+	font-size: medium;
+	padding: 4px 10px;
+}
+
+.login-row .col-75 #chooseBtn {
+	text-align: center;
+}
+
+.nav-top-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-profile-image {
+    width: 44px;           /* Set the width of the profile picture */
+    height: 44px;          /* Ensure height is same as width to get a perfect circle */
+    border-radius: 50%;    /* Make it circular */
+    object-fit: cover;     /* If it's an image, this ensures it scales correctly */
+    display: inline-block; /* To ensure border applies correctly */
+    overflow: hidden;      /* To ensure the child content doesn't spill out */
+    background-color: #DEB887;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: a default background color */
+    border: 2px solid white;
+    position: relative;
+}
+
+.custom-list li {
+	margin-bottom: 7px;
+}
+
+#reviewContent {
+	resize: none;
+}
+
+.discussion-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 88px;
+}
+
+.discussion-top h2 {
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+}
+
+.discussion-top input {
+	width: 100%;
+	padding: 10px;
+}
+
+.discussions-bottom {
+	margin-top: 60px;
+}
+
+#discussion-threads-search {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.custom-search-btn {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.custom-search-btn:hover {
+	opacity: .5;
+}
+
+.fa-magnifying-glass {
+	color: white;
+	padding-left: 5px;
+}
+
+.discussion-details-top {
+	background: linear-gradient(45deg, burlywood 0 50%, green 50% 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+.discussion-details-top .nav-profile-image {
+	width: 120px;           /* Set the width of the profile picture */
+    height: 120px;          /* Ensure height is same as width to get a perfect circle */
+    border-radius: 50%;    /* Make it circular */
+    object-fit: cover;     /* If it's an image, this ensures it scales correctly */
+    display: inline-block; /* To ensure border applies correctly */
+    overflow: hidden;      /* To ensure the child content doesn't spill out */
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: a default background color */
+    border: 2px solid white;
+    position: relative;
+    font-size: 44px;
+    color: white;
+}
+
+.discussion-top-image {
+	width: 70%;
+	height: 70%;
+	border-radius: 25px;
+	border: white solid 3px;
+	padding: 60px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-side-discussion{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.right-side-discussion {
+	flex: 3;
+}
+
+.comment-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.comment-section .discussion-card {
+	width: 75%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-section h2 {
+	margin: 20px 0px;
+}
+
+.scrollable-table {
+    overflow-y: auto;  /* Enables vertical scrolling */
+    max-height: 400px; /* Or whatever maximum height you desire */
+}
+
+
+.scrollable-table {
+    overflow-y: auto;  /* Enables vertical scrolling */
+    max-height: 600px; /* Or whatever maximum height you desire */
+}
+
+#reviewed-hospitals-div {
+	overflow-y: auto;
+	max-height: 147px;
+}
+
+.own-reviews {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blue-font-hover-blue {
+	color: blue;
+	font-size: medium;
+}
+
+.blue-font-hover-blue:hover {
+	color: burlywood;
+}
+
+/* Modal (background) */
+.delete-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.delete-modal-content {
+  font-size: larger;
+  background-color: #fefefe;
+  border-radius: 8px;
+  margin: 22% auto; /* 15% from the top and centered */
+  padding: 3px 10px 20px 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-modal-button {
+  padding: 10px 18px;
+  border: 1px solid inset var(--c);
+  border-radius: 4px;
+  box-shadow: 0 0 0 .2em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  color: initial;
+  transition: background-size .4s, background-position 0s .4s, color .4s;
+  font-size: medium;
+}
+
+.delete-modal-button.cancel {
+  --c: black; /* Yellow color */
+}
+
+.delete-modal-button.confirm-delete {
+  --c: #ff0000; /* Red color */
+}
+
+.delete-modal-button:hover {
+  --_p: 100%;
+  color: #fff;
+  transition: background-position .4s, background-size 0s;
+  cursor: pointer;
+}
+
+.delete-modal-button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+.delete-modal-content > .d-flex {
+	gap: 20px;
+}
+
+.own-reviews > .d-flex {
+	gap: 9px;
+	align-items: center;
+	margin-left: 5px;
+}
+
+.js-ct-sp-btw {
+	justify-content: space-between;
+}
+
+#pw-modal {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.algin-items-center {
+	position: relative;
+	display:flex;
+	align-items: center;
+}
+
+.passwordInput, .confirmPasswordInput, #loginPasswordInput {
+	flex-grow: 1;
+}
+
+.togglePassword, .toggleConfirmPassword, #toggleLoginPassword {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
+
+.fa-eye, .fa-eye-slash {
+	color: lightgrey;
+}
+
+.hospital-dropdown {
+	display: absolute;
+	width:100%;
+}
+
+.dark-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns children vertically in the center */
+    height: 87vh; /* Or whatever height you prefer */
+    background-size: cover;
+    background-position: center;
+    padding: 45px;
+    font-size: 30px;
+    margin-bottom: 15px;
+   color: var(--high-contrast-color);
+  text-shadow: var(--intense-text-shadow);
+}
+
+.pair-container {
+    margin: 10px 0; /* Adds spacing between each pair */
+    text-align: center; /* Centers text within each pair */
+}
+
+:root {
+  --high-contrast-color: #FFFFFF; /* Pure white */
+  --high-contrast-text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.1); /* Text shadow for contrast */
+  --intense-text-shadow:
+  1px 1px 3px rgba(0, 0, 0, 1),   /* Multiple layers of shadow for a glowing effect */
+    2px 2px 3px rgba(0, 0, 0, 1),
+    3px 3px 5px rgba(0, 0, 0, 1),
+    4px 4px 7px rgba(0,0,0,1);
+}
+
+
