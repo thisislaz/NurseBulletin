@@ -81,8 +81,7 @@ public class HospitalController {
 		return "views/hospitalDetails";
 	}
 	
-	@GetMapping("/hospitalNames")
-	@ResponseBody
+	// deleted mapping
 	public List<String> getHospitalNames(){
 		  List<Hospital> hospitals = hospitalService.readHospitalsFromCSV();
 		  return hospitals.stream().map(Hospital::getHospitalName).collect(Collectors.toList());
