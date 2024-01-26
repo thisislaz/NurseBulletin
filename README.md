@@ -14,4 +14,5 @@ Welcome to the Nurse Review Portal! This web application is designed for nurses 
 - **Java & JSP:** For robust backend development.
 - **MySQL:** Used for database management.
 - **JavaScript & CSS:** Ensures a dynamic and responsive user interface.
+- **Alpine.JS & Tailwind CSS:** Uses latest modern technologies.
 - **CRUD Architecture:** Facilitates efficient data handling and interactions.
